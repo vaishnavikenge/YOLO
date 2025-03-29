@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bmi.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,500i,600,600i,700,700i&amp;display=swap" rel="stylesheet">
+
+
+
+    <title>YOLO</title>
+  </head>
+  <body>
+    
+    <header>
+      
+      <h1 style="font-style: italic; font-size: 50px;">BMI Calculator</h1>
+    </header>
+    <main>
+      <div class="container" >
+        <div class="result" id="resultado"></div>
+
+        <div class="input">
+          <label for="nome">Name:</label>
+          <input
+            type="text"
+            id="nome"
+            placeholder="Enter your name here"
+            maxlength="20"
+          />
+        </div>
+
+        <div class="input">
+          <label for="altura">Height(m):</label>
+          <input
+            type="text"
+            id="altura"
+            placeholder="Enter your height here"
+            maxlength="4"
+            oninput="this.value = this.value.replace(',', '.');"
+          />
+        </div>
+
+        <div class="input">
+          <label for="peso">Weight(Kg):</label>
+          <input
+            type="text"
+            id="peso"
+            placeholder="Enter your weight here"
+            maxlength="6"
+          />
+        </div>
+        <button id="calcular">Calculate</button>
+      </div>
+    </main>
+
+    
+    <script src="bmi.js"></script>
+  </body>
+</html>

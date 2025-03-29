@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surya Namaskar</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar-nav .nav-link {
+            color: #333;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #007bff;
+        }
+        .surya-namaskar {
+            margin: 20px 0;
+        }
+        .surya-namaskar img {
+            cursor: pointer;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+        }
+        .pose-title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+        <div class="row m-auto">
+        <div class="col-12 w-100 text-center">
+        <a class="navbar-brand w-100" href="index.html">Dream On: Understand Your Sleep Patterns</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+        </button>
+        </div>
+        <div class="col-12 w-100 text-center">
+        <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav m-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <!-- <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li> -->
+            <li class="nav-item"><a href="diet.html" class="nav-link">Balanced Diet</a></li>
+            <li class="nav-item"><a href="stress.html" class="nav-link">Stress management</a></li>
+            <li class="nav-item"><a href="schedule.html" class="nav-link">Schedule</a></li>
+            <li class="nav-item"><a href="sleep.html" class="nav-link">Sleeping Pattern</a></li>
+            <li class="nav-item"><a href="bmi.html" class="nav-link">Calculate BMI</a></li>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+        </nav>
+        <!-- END nav -->
+        <section class="hero-wrap hero-wrap-2" style="background-image:url(https://www.hithyoga.com/wp-content/uploads/2018/04/surya-namaskar.jpg)" data-stellar-background-ratio="0.2">
+        <div class="overlay"></div>
+    <!-- Surya Namaskar Section -->
+    <div class="container text-center surya-namaskar">
+        <h1>Surya Namaskar</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="pose1.jpg" alt="Pose 1" data-toggle="modal" data-target="#pose1Modal">
+                <div class="pose-title">Pose 1</div>
+            </div>
+            <div class="col-md-4">
+                <img src="pose2.jpg" alt="Pose 2" data-toggle="modal" data-target="#pose2Modal">
+                <div class="pose-title">Pose 2</div>
+            </div>
+            <div class="col-md-4">
+                <img src="pose3.jpg" alt="Pose 3" data-toggle="modal" data-target="#pose3Modal">
+                <div class="pose-title">Pose 3</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="pose4.jpg" alt="Pose 4" data-toggle="modal" data-target="#pose4Modal">
+                <div class="pose-title">Pose 4</div>
+            </div>
+            <div class="col-md-4">
+                <img src="pose5.jpg" alt="Pose 5" data-toggle="modal" data-target="#pose5Modal">
+                <div class="pose-title">Pose 5</div>
+            </div>
+            <div class="col-md-4">
+                <img src="pose6.jpg" alt="Pose 6" data-toggle="modal" data-target="#pose6Modal">
+                <div class="pose-title">Pose 6</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="pose7.jpg" alt="Pose 7" data-toggle="modal" data-target="#pose7Modal">
+                <div class="pose-title">Pose 7</div>
+            </div>
+            <div class="col-md-4">
+                <img src="pose8.jpg" alt="Pose 8" data-toggle="modal" data-target="#pose8Modal">
+                <div class="pose-title">Pose 8</div>
+            </div>
+            <div class="col-md-4">
+                <img src="pose9.jpg" alt="Pose 9" data-toggle="modal" data-target="#pose9Modal">
+                <div class="pose-title">Pose 9</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="pose10.jpg" alt="Pose 10" data-toggle="modal" data-target="#pose10Modal">
+                <div class="pose-title">Pose 10</div>
+            </div>
+            <div class="col-md-4">
+                <img src="pose11.jpg" alt="Pose 11" data-toggle="modal" data-target="#pose11Modal">
+                <div class="pose-title">Pose 11</div>
+            </div>
+            <div class="col-md-4">
+                <img src="pose12.jpg" alt="Pose 12" data-toggle="modal" data-target="#pose12Modal">
+                <div class="pose-title">Pose 12</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals for Pose Benefits -->
+    <!-- Pose 1 Modal -->
+    <div class="modal fade" id="pose1Modal" tabindex="-1" aria-labelledby="pose1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pose1ModalLabel">Pose 1 Benefits</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add the benefits of Pose 1 here -->
+                    <p>Benefits of Pose 1...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pose 2 Modal -->
+    <div class="modal fade" id="pose2Modal" tabindex="-1" aria-labelledby="pose2ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pose2ModalLabel">Pose 2 Benefits</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add the benefits of Pose 2 here -->
+                    <p>Benefits of Pose 2...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pose 3 Modal -->
+    <div class="modal fade" id="pose3Modal" tabindex="-1" aria-labelledby="pose3ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pose3ModalLabel">Pose 3 Benefits</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add the benefits of Pose 3 here -->
+                    <p>Benefits of Pose 3...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pose 4 Modal -->
+    <div class="modal fade" id="pose4Modal" tabindex="-1" aria-labelledby="pose4ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pose4ModalLabel">Pose 4 Benefits</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add the benefits of Pose 4 here -->
+                    <p>Benefits of Pose 4...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pose 5 Modal -->
+    <div class="modal fade" id="pose5Modal" tabindex="-1" aria-labelledby="pose5ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pose5ModalLabel">Pose 5 Benefits</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add the benefits of Pose 5 here -->
+                    <p>Benefits of Pose 5...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pose 6 Modal -->
+    <div class="modal fade" id="pose6Modal" tabindex="-1" aria-labelledby="pose6ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pose6ModalLabel">Pose 6 Benefits</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add the benefits of Pose 6 here -->
+                    <p>Benefits of Pose 6...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pose 7 Modal -->
+    <div class="modal fade" id="pose7Modal" tabindex="-1" aria-labelledby="pose7ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pose7ModalLabel">Pose 7 Benefits</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add the benefits of Pose 7 here -->
+                    <p>Benefits of Pose 7...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pose 8 Modal -->
+    <div class="modal fade" id="pose8Modal" tabindex="-1" aria-labelledby="pose8ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pose8ModalLabel">Pose 8 Benefits</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add the benefits of Pose 8 here -->
+                    <p>Benefits of Pose 8...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pose 9 Modal -->
+    <div class="modal fade" id="pose9Modal" tabindex="-1" aria-labelledby="pose9ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pose9ModalLabel">Pose 9 Benefits</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add the benefits of Pose 9 here -->
+                    <p>Benefits of Pose 9...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pose 10 Modal -->
+    <div class="modal fade" id="pose10Modal" tabindex="-1" aria-labelledby="pose10ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pose10ModalLabel">Pose 10 Benefits</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add the benefits of Pose 10 here -->
+                    <p>Benefits of Pose 10...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pose 11 Modal -->
+    <div class="modal fade" id="pose11Modal" tabindex="-1" aria-labelledby="pose11ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pose11ModalLabel">Pose 11 Benefits</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add the benefits of Pose 11 here -->
+                    <p>Benefits of Pose 11...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pose 12 Modal -->
+    <div class="modal fade" id="pose12Modal" tabindex="-1" aria-labelledby="pose12ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pose12ModalLabel">Pose 12 Benefits</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Add the benefits of Pose 12 here -->
+                    <p>Benefits of Pose 12...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
